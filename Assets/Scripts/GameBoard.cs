@@ -79,7 +79,7 @@ public class GameBoard : MonoBehaviour
                 nextState.SetTile(cell, aliveTile);
                 aliveCells.Add(cell);
             }
-            else if(alive && (neighbors <2 || neighbors > 3))//CHET DI
+            else if(alive && (neighbors <2 || neighbors > 4))//CHET DI
             {
                 //become dead
                 nextState.SetTile(cell, deadTile);
